@@ -5,16 +5,18 @@ import time
 
 app = Flask(__name__)
 
+version = "1.0"
+
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(message)s')
 
 @app.route('/')
 def hello_world():
-    app.logger.info("Hello, World! V1.0")
-    return 'Hello, World! V1.0'
+    app.logger.info("Hello, World! V", version)
+    return ('Hello, World! V', version)
 
 def log_hello_world():
     while True:
-        app.logger.info("Hello, World! V1.0")
+        app.logger.info("Hello, World! V", version)
         time.sleep(20)
 
 if __name__ == '__main__':
