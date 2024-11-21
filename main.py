@@ -9,12 +9,12 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(message)s')
 
 @app.route('/')
 def hello_world():
-    app.logger.info("Hello, World! V1.15.1")
-    return 'Hello, World! V1.15.1'
+    app.logger.info("Hello, World! V1.0")
+    return 'Hello, World! V1.0'
 
 def log_hello_world():
     while True:
-        app.logger.info("Hello, World! V1.15.1")
+        app.logger.info("Hello, World! V1.0")
         time.sleep(20)
 
 if __name__ == '__main__':
