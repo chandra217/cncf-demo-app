@@ -5,7 +5,7 @@ import time
 
 app = Flask(__name__)
 
-version = "2.0"
+version = "1.1"
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(message)s')
 
